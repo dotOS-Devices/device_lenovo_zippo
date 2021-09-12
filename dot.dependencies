@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_device_lenovo_zippo-common",
+    "repository": "device_lenovo_zippo-common",
     "target_path": "device/lenovo/zippo-common"
   }
 ]
