@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_zippo.mk
+    $(LOCAL_DIR)/nad_zippo.mk
