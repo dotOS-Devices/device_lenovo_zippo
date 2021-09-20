@@ -1,2 +1,5 @@
 # Camera
 ro.config.zui.region=ROW
+
+# Disable treble
+ro.treble.enabled = false
