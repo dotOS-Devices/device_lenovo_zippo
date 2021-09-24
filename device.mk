@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/lenovo/zippo/zippo-vendor.mk)
+
+# sm8150-common
+$(call inherit-product, device/lenovo/sm8150-common/common.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -19,6 +25,10 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+    
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
@@ -28,9 +38,3 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lenovo/zippo/zippo-vendor.mk)
-
-# sm8150-common
-$(call inherit-product, device/lenovo/sm8150-common/common.mk)
