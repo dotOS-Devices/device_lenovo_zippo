@@ -1,0 +1,14 @@
+[
+  {
+      "repository": "device_lenovo_zippo-common",
+      "target_path": "device/lenovo/sm8150-common",
+      "branch": "dot11",
+      "remote": "dotOS-Devices"
+  },
+  {
+      "repository": "vendor_lenovo_zippo",
+      "target_path": "vendor/lenovo",
+      "branch": "11-new",
+      "remote": "dotOS-Devices"
+  }
+]
